@@ -1,1 +1,1 @@
-# > /Views에 컴포넌트들이 들어있습니다.
+"# habit-training"

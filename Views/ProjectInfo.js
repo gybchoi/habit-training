@@ -110,16 +110,9 @@ export default class ProjectInfo extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View
-          style={{
-            flex: 1.6,
-            justifyContent: 'flex-end',
-            alignItems: 'center',
-          }}>
-          <Text style={styles.habit_text}>{this.state.habit}</Text>
-          <Text style={styles.date_text}>{this.getProjectPeriod()}</Text>
-          <View>{this.getCompleteButton()}</View>
-        </View>
+        <Text style={styles.habit_text}>{this.state.habit}</Text>
+        <Text style={styles.date_text}>{this.getProjectPeriod()}</Text>
+        <View>{this.getCompleteButton()}</View>
       </View>
     );
   }
@@ -130,6 +123,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     justifyContent: 'center',
+    alignItems: 'center',
   },
   habit_text: {
     textAlign: 'center',
